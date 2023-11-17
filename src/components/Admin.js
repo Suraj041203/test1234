@@ -1,5 +1,6 @@
 import React from 'react';
 import './Admin.css';
+import { Link } from 'react-router-dom';
 
 function Admin() {
     return (
@@ -12,22 +13,16 @@ function Admin() {
                         <div className="input-box">
                             <span className="icon"><ion-icon name="mail-outline"></ion-icon></span>
                             <label>
-                                <input type="email" required placeholder="Email" />
+                                <input type="email"  placeholder="Email" />
                             </label>
                         </div>
                         <div className="input-box">
                             <span className="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
                             <label>
-                                <input type="password" required placeholder="Password" />
+                                <input type="password"  placeholder="Password" />
                             </label>
                         </div>
-                        <div className="remember-forgot">
-                            <label>
-                                <input type="checkbox" /> Remember me
-                            </label>
-                            <a href="#"> Forgot Password?</a>
-                        </div>
-                        <button type="submit" className="btn">Login</button>
+                        <button type="submit" className="btn"> <Link to="/adminmain">Login</Link></button>
                     </form>
                 </div>
             </div>
